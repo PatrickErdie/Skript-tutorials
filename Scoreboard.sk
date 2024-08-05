@@ -1,0 +1,15 @@
+# WARNING REQUIRES SKBee
+#
+# SkBee download link: https://github.com/ShaneBeee/SkBee
+#
+# Hope this helps
+
+on join:
+    while player is online:
+        set title of player's scoreboard to "My Server"
+        set line 1 of player's scoreboard to "Players Name: %player%"
+        set line 2 of player's scoreboard to "Money: %{money::%uuid of player%}%"
+        wait 1 second
+
+  # you can add more stuff but this scorebaord will update every second
+  #I think you can do like 25 lines

@@ -1,0 +1,10 @@
+# REQUIRES SKBEE
+# SKBee Download: 
+
+command /giveitem:
+    trigger:
+        set {_item} to diamond sword named "Special Sword" with lore "hiiiii", "jher", and "rtihkr"
+        add nbt compount of "{AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:26,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12378,8087,203011,-16174]},{AttributeName:"generic.max_health",Amount:2044.0,Slot:mainhand,Name:"generic.max_health",UUID:[I;-12378,8187,203011,-16374]}]}" to nbt compound of {_item}
+        give player 1 of {_item}
+
+# If you are confused you must set a variable (local is recommended) and then add the attribute to the variable. Hope that makes you less confused
